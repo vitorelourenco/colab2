@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      @media screen and (max-width:540px) {
+        #welcome-section{
+          background-color: aqua;
+        }
+      }
+
+      navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align:center;
+      }
+
+      #welcome-section {
+        height: 100vh;
+      }
+    </style>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+    <navbar id="navbar">
+      <a href="#welcome-section">welcome section</a> 
+      <a href="#projects">projects section</a> 
+    </navbar>
+    <section id="welcome-section">
+      <h1>Some text</h1>
+      <a id="profile-link" target="_blank" href="https://github.com/vitorelourenco/"> My github</a>
+    </section>
+    <section id="projects">
+      <h1 class="project-tile">This is a project title</h1>
+      <a href="https://github.com/vitorelourenco/colab1">Colab1</a>
+    </section>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
